@@ -4,9 +4,9 @@ import { message } from "antd";
 import { post } from "./Request";
 
 //change the apiKey/endpoint/deployment of Azure AI service to yours
-export const apiKey = ""
-export const endpoint = ""
-export const deployment = ""
+export const apiKey = "8afceda91c7542139bc1c20cdb026459"
+export const endpoint = "https://aa-innovationcenter-rfigenerator-useast-01.openai.azure.com"
+export const deployment = "Model_GPT35Turbo_Base"
 
 export const dropdownMenus = {
     title: [

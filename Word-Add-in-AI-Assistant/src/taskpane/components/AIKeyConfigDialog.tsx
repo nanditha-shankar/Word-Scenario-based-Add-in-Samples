@@ -2,9 +2,9 @@ import { Input, Modal } from "antd";
 import React from "react";
 
 // global variable to store the api key/endpoint/deployment, configrued by developer
-export let _apiKey = "";
-export let _endPoint = "";
-export let _deployment = "";
+export let _apiKey = "8afceda91c7542139bc1c20cdb026459";
+export let _endPoint = "https://aa-innovationcenter-rfigenerator-useast-01.openai.azure.com/";
+export let _deployment = "Model_GPT35Turbo_Base";
 
 export interface ApiKeyConfigProps {
     isOpen: boolean;

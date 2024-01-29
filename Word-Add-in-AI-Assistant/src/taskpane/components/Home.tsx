@@ -105,23 +105,14 @@ export default class Home extends React.Component {
 
         return (
           <>
-            <div className="wrapper">
-              <div className="survey">
-                <RightOutlined />
-                <a
-                  href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8GFRbAYEV9Hmqgjcbr7lOdUNVAxQklNRkxCWEtMMFRFN0xXUFhYVlc5Ni4u"
-                  target="_blank"
-                >
-                  How do you like this sample? Tell us more!
-                </a>
-              </div>
-              <img
-                src="https://i1.wp.com/artificialintelligencestechnology.com/wp-content/uploads/2020/03/Logo.png?fit=4167%2C4167&ssl=1"
+          <div>
+            <img
+                src="https://localhost:3000/assets/A1_logo_JPEG.jpg"
                 className="logo"
               />
               <h5 className="name">Content Generation</h5>
               <div className="login">
-                <span>User: contoso</span>
+                <span>User: A1FED</span>
                 <AIKeyConfigDialog
                   isOpen={this.state.openKeyConfigDialog}
                   setOpen={this.open.bind(this)}

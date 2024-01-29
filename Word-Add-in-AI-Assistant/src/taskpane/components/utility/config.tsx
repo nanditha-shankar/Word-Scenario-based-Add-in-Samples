@@ -81,14 +81,16 @@ export const generateText = (content: string, maxTokens: number = 1000) => {
         headers: {
             "api-key": _apiKey,
             "Content-Type": "application/json",
+            "api-type" : "azure",
         },
         params: {
             "api-version": AzureAI.apiversion,
         },
     };
 
-    let url = _endPoint + "/openai/deployments/" + _deployment + "/completions";
-
+   let url = _endPoint + "openai/deployments/" + _deployment + "/completions";
+   console.log(url)
+//let url =_endPoint
     return post(url, requestBody, config).then((res) => {
         if (res.status == 200 && res.data != null) {
             let resObj: AzureTextGenRes = res.data;
